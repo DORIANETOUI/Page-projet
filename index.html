@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doriane Toui Lou - Mes Projets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9M2AUx8R7X+XQzZ6U+Lg2F7n/nU3jXgZ4p3P3D/G4p0qT1k3Z6R6F5q6S6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Variables CSS pour les couleurs pastels */
+        :root {
+            --pastel-blue: #E0F7FA;   /* Très clair, comme l'eau */
+            --pastel-pink: #FCE4EC;   /* Rose doux */
+            --pastel-green: #E8F5E9;  /* Vert menthe clair */
+            --pastel-yellow: #FFFDE7; /* Jaune très pâle */
+            --pastel-purple: #EDE7F6; /* Lavande très clair */
+
+            --text-dark: #424242; /* Gris foncé doux */
+            --primary-color: #90CAF9; /* Bleu clair pour les accents */
+            --background-light: #F9F9F9; /* Fond très clair */
+            --card-background: #FFFFFF; /* Fond des cartes */
+            --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alignement en haut */
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: var(--card-background);
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+            color: var(--text-dark);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .project-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .project-item {
+            background-color: var(--pastel-blue); /* Couleur de fond pour chaque élément */
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            text-align: left;
+        }
+
+        .project-item:hover {
+            transform: translateY(-3px);
+            background-color: var(--pastel-pink); /* Changement de couleur au survol */
+        }
+
+        .project-item h2 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.5em;
+            color: var(--text-dark);
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .project-item p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .project-item a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .project-item a:hover {
+            background-color: #64B5F6; /* Une teinte plus foncée du primary-color */
+        }
+
+        .icon {
+            margin-right: 8px;
+            color: white; /* Couleur des icônes dans le bouton */
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .project-item {
+                padding: 15px;
+            }
+            .project-item h2 {
+                font-size: 1.3em;
+            }
+            .project-item a {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mes Projets</h1>
+        <p>Découvrez mes réalisations en développement web et IA. Chaque projet est une démonstration de mes compétences et de ma passion pour la technologie.</p>
+
+        <ul class="project-list">
+            <li class="project-item">
+                <h2>Pseudo Site E-commerce - Glam & Glow ✨💄</h2>
+                <p>Vitrine web simulant une boutique de produits de beauté, avec catalogue et gestion de "sélection" personnalisée via Formspree.io.</p>
+                <a href="https://dorianetoui.github.io/GlamGlow/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>🏨 Hôtel Rivage : Votre Séjour de Rêve à Portée de Clic ! ✨</h2>
+                <p>Site web interactif d'hôtel avec processus de réservation intégré via Formspree et chatbot intelligent propulsé par Dialogflow.</p>
+                <a href="https://dorianetoui.github.io/Hotel-Rivage/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>Ornement d'Afrique : L'Artisanat Ivoirien Réinventé en Ligne 🌍✨</h2>
+                <p>Site vitrine d'artisanat ivoirien avec galerie interactive, mascotte animée, narration vocale et formulaire de contact.</p>
+                <a href="https://dorianetoui.github.io/Ornement-d-Afrique/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>Pseudo Site E-commerce - Mode Éclair ⚡🛍️</h2>
+                <p>Site front-end dynamique pour vêtements et baskets, avec gestion des variantes (tailles/couleurs) et panier interactif via Formspree.io.</p>
+                <a href="https://dorianetoui.github.io/ModeEclair/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>InnovationTechSummit 2025 🚀 - Site pour un évènement</h2>
+                <p>Plateforme digitale pour une conférence technologique, avec programme, profils de conférenciers et formulaire d'inscription sécurisé.</p>
+                <a href="https://dorianetoui.github.io/InnovationTechSummit/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>MALOU COUTURE👗✨ - Site d'atelier de couture</h2>
+                <p>Vitrine numérique pour un atelier de mode fusionnant patrimoine textile africain et mode contemporaine, avec galerie et contact.</p>
+                <a href="https://dorianetoui.github.io/malou_couture/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>Application de gestion de location de voitures avec Symfony et MySQL</h2>
+                <p>Application web complète pour gérer les locations de voitures, incluant clients, véhicules, chauffeurs, tarifs et génération de PDF.</p>
+                <a href="https://github.com/DORIANETOUI/GestionLocationVoiture.git" target="_blank"><i class="fab fa-github icon"></i> Voir le Dépôt GitHub</a>
+            </li>
+            <li class="project-item">
+                <h2>Agent IA: 📚 Projet Wikipédia Voix 🎙️</h2>
+                <p>Assistant intelligent utilisant l'API Wikipédia pour rechercher et résumer des articles en temps réel avec synthèse vocale.</p>
+                <a href="https://huggingface.co/spaces/TouiLou/wikipedia-agent-voix" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>✂️🪨📄 Jeu Pierre-Papier-Ciseaux Tkinter 🎮</h2>
+                <p>Jeu interactif développé en Python avec Tkinter, offrant un thème sombre, des effets sonores et une interface responsive.</p>
+                <a href="https://github.com/DORIANETOUI/PierrePapierCiseauTkinter.git" target="_blank"><i class="fab fa-github icon"></i> Voir le Dépôt GitHub</a>
+            </li>
+            <li class="project-item">
+                <h2>Café & Thé – Site web</h2>
+                <p>Site vitrine pour un café parisien fictif, spécialisé dans les petits-déjeuners sains, thés et pâtisseries, avec galerie photo.</p>
+                <a href="https://dorianetoui.github.io/site-cafe/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>🏋️‍♂️ Alpha Fitness Club : Site Vitrine</h2>
+                <p>Site web one-page pour une salle de sport moderne, avec design épuré, carrousel d'images et informations essentielles.</p>
+                <a href="https://dorianetoui.github.io/alpha-fitness-club/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>Jeu de Mémoire interactif</h2>
+                <p>Jeu de Mémoire interactif en HTML, CSS et JavaScript, avec compteur de coups, chronomètre et animations 3D.</p>
+                <a href="https://dorianetoui.github.io/jeu-de-memoire/" target="_blank"><i class="fas fa-external-link-alt icon"></i> Voir le Projet</a>
+            </li>
+            <li class="project-item">
+                <h2>Application de Caisse 💻🛍️</h2>
+                <p>Application de caisse complète en Python avec Tkinter, gestion des ventes, calcul des totaux et gestion de stock en temps réel.</p>
+                <a href="https://github.com/DORIANETOUI/Application-de-Caisse.git" target="_blank"><i class="fab fa-github icon"></i> Voir le Dépôt GitHub</a>
+            </li>
+            <li class="project-item">
+                <h2>Système de Facturation et Historique des Ventes 📄📊</h2>
+                <p>Module complémentaire à l'application de caisse, incluant un système de facturation PDF et un historique des ventes pour traçabilité.</p>
+                <a href="https://github.com/DORIANETOUI/Application-de-Caisse.git" target="_blank"><i class="fab fa-github icon"></i> Voir le Dépôt GitHub</a>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <p>&copy; <span id="currentYear"></span> DORIANE TOUI LOU. Tous droits réservés.</p>
+            <p>Conçu avec passion pour la technologie.</p>
+        </div>
+    </div>
+
+    <script>
+        // Met à jour l'année dans le footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
